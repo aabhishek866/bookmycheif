@@ -1,0 +1,16 @@
+{
+  "name": "bookmycheif",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "install:frontend": "cd frontend && npm install",
+    "install:admin": "cd admin && npm install",
+    "install:all": "npm run install:frontend && npm run install:admin",
+    "build:frontend": "cd frontend && npm run build",
+    "build:admin": "cd admin && npm run build",
+    "build": "npm run build:frontend && npm run build:admin && node merge-builds.js",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:admin": "cd admin && npm run dev"
+  }
+}
