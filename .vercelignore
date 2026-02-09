@@ -1,0 +1,13 @@
+node_modules
+.git
+*.log
+.DS_Store
+.env.local
+.env.*.local
+backend
+frontend/node_modules
+admin/node_modules
+frontend/dist
+admin/dist
+*.md
+!README.md
